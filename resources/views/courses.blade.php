@@ -1,13 +1,18 @@
-<!doctype html>
-<html>
-<head>
-<title v-bind:title="title"></title>
-</head>
-<body>
-<div id="root">
-</div>
-<script src="https://unpkg.com/vue"></script>
+@extends('layouts.app')
 
+@section('title', 'Tech Teach')
 
-</body>
-</html>
+<!--navigation-->
+@section('nav')
+    <p>This is my nav content.</p>
+@endsection
+
+<!--course listing-->
+@section('content')
+    <p>This is my course content.</p>
+@endsection
+
+<!--footer-->
+@section('footer')
+    <p>This is my footer content.</p>
+@endsection
