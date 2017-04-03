@@ -8,7 +8,19 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    You are logged in!
+              <form action="/your-server-side-code" method="POST">
+
+  <script src="https://checkout.stripe.com/checkout.js" 
+  class="stripe-button" 
+  data-key="pk_test_QZQQf17KexkXTErv6bKPeAP9" 
+  data-amount="999" data-name="stripe.com" 
+  data-description="Widget" 
+  data-image="https://stripe.com/img/documentation/checkout/marketplace.png" 
+  data-locale="auto" 
+  data-notrack="">
+  </script>
+  
+</form>
                 </div>
             </div>
         </div>
