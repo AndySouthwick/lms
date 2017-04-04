@@ -7,7 +7,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">Dashboard</div>
 
-                    <p>You are logged in.</p>
+                    <p>Welcome {{{ isset(Auth::user()->name) ? Auth::user()->name : Auth::user()->email }}}</p>
 
                 </div>
             </div>
