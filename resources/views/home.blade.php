@@ -8,7 +8,20 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <p>You are logged in.</p>
+                
+<form action="/subscriptions" method="POST">
+    {{ csrf_field() }}
 
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="{{ config('services.stripe.key') }}"
+    data-amount="999"
+    data-name="techit"
+    data-description="Widget"
+    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+    data-locale="auto">
+  </script>
+</form>
                 </div>
             </div>
         </div>
