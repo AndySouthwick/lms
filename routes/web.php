@@ -18,13 +18,10 @@ Route::get('/login', function () {
     return view('auth/login');
 });
 
-Route::get('/stripe', function () {
-    return view('stripe');
-});
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
 Route::get('/profile', 'ProfileController@index');
 
+Route::get('/stripe', 'StripeController@index');

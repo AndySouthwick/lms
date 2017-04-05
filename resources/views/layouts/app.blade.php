@@ -56,9 +56,8 @@
                             <li><a href="{{ url('/profile') }}">Profile</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                    {{ Auth::user()->name }} <span class="caret"></span>
+                               {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
-
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
                                         <a href="{{ route('logout') }}"
@@ -73,6 +72,7 @@
                                     </li>
                                 </ul>
                             </li>
+                             
                         @endif
                     </ul>
                 </div>
@@ -80,11 +80,28 @@
         </nav>
 
         @yield('content')
+
+        @if (Auth::user()->card_last_four == NULL)
+        <form action="/your-server-side-code" method="POST">
+              <form action="/your-server-side-code" method="POST">
+       <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_test_QZQQf17KexkXTErv6bKPeAP9"
+    data-amount="999"
+    data-name="techit"
+    data-description="Widget"
+    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+    data-locale="auto">
+  </script>
+        </form>
+        
+        @endif
     </div>
 
     <!-- Scripts -->
-      <script src=" https://js.stripe.com/v2/stripe-debug.js"></script>
-   
+      <script src="   https://js.stripe.com/v2/stripe-debug.js"></script>
+
     <script src="{{ asset('js/app.js') }}"></script>
+     
 </body>
 </html>
