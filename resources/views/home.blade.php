@@ -8,10 +8,13 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <p>You are logged in.</p>
-<form action="/your-server-side-code" method="POST">
+                
+<form action="/subscriptions" method="POST">
+    {{ csrf_field() }}
+
   <script
     src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-    data-key="pk_test_QZQQf17KexkXTErv6bKPeAP9"
+    data-key="{{ config('services.stripe.key') }}"
     data-amount="999"
     data-name="techit"
     data-description="Widget"
