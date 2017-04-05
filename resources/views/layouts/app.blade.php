@@ -83,6 +83,8 @@
     </div>
 
     <!-- Scripts -->
+      <script src=" https://js.stripe.com/v2/stripe-debug.js"></script>
+   
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
