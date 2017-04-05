@@ -8,16 +8,16 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <p>You are logged in.</p>
-                
+
 <form action="/subscriptions" method="POST">
     {{ csrf_field() }}
 
   <script
     src="https://checkout.stripe.com/checkout.js" class="stripe-button"
     data-key="{{ config('services.stripe.key') }}"
-    data-amount="999"
-    data-name="techit"
-    data-description="Widget"
+    data-amount="2500"
+    data-name="Account Subscription"
+    data-description="Subscription to Crack Online"
     data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
     data-locale="auto">
   </script>
