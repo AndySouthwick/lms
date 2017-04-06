@@ -26,4 +26,33 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function activate($cusotmerId = null)
+    {
+        return $this->forceFill([
+                'stripe_id' => $cusotmerId ?? $this->stripe_id,
+                'stripe_active' => true,
+                'subscription_end_at' => null
+            ])->save();
+    }
+
+    public function deactivate()
+    {
+        return $this->forceFill([
+                'stripe_active' => false,
+                'subscription_end_at' => \Carbon\Carbon::now()
+            ])->save();
+    }
+
+    public function subscription()
+    {
+        return new Subscription($this);
+    }
+
+    public function isSubscribed ()
+    {
+        return !! $this->stripe_active;
+    }
+
+    
 }
