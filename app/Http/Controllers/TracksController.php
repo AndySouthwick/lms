@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Http\Controllers\Controller;
+use App\Track;
 use Illuminate\Http\Request;
 
 class TracksController extends Controller
@@ -21,8 +22,9 @@ class TracksController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        return view('tracks');
+    public function index() {
+       $tracks = Track::all();
+       return view('tracks')
+       ->with('tracks', $tracks); 
     }
 }

@@ -25,7 +25,7 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/profile', 'ProfileController@index');
 
-Route::get('/tracks', 'TracksController@index');
+Route::resource('/tracks', 'TracksController');
 
 Route::get('/courses', 'CoursesController@index');
 
