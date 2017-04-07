@@ -6,7 +6,7 @@
     @foreach ($tracks as $track)
     <div class="col-lg-6">
     <div class="panel panel-default">
-    <a href="#">
+    <a href="#" class="a">
          <div class="panel-body">
          
           <div class="col-lg-3"><img src="{{$track->track_image_location}}" width="100"/></div>
