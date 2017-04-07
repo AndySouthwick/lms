@@ -8,7 +8,9 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>
+    @yield('title')
+    </title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -21,6 +23,7 @@
     </script>
 </head>
 <body>
+
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
@@ -35,9 +38,13 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                       @if (Auth::guest()) <a class="navbar-brand" href="{{ url('/') }}">
+                        {{ config('app.name', 'Techit') }}
                     </a>
+                    @else <a class="navbar-brand" href="{{ url('/courses') }}">
+                        {{ config('app.name', 'Techit') }}
+                    </a>
+                    @endif
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
@@ -53,7 +60,9 @@
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
                         @else
+                            <li><a href="{{ url('/tracks') }}">Tracks</a></li>
                             <li><a href="{{ url('/profile') }}">Profile</a></li>
+                           
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -79,13 +88,18 @@
             </div>
         </nav>
 
+        <div class="container">
         @yield('content')
+        </div>
     </div>
+  
         <footer class="footer">
         <div class="container">
-        @yield('footer')
+        <p>This is my footer content.</p>
         </div>
-        </footer>
+       </footer>
+        </div>
+
     <!-- Scripts -->    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
