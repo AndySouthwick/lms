@@ -21,6 +21,7 @@ class CreateCoursesTable extends Migration
             $table->string('level');
             $table->string('course_length');
             $table->integer('course_star_rating');
+            $table->string('course_downloads');
             $table->timestamps();
         });
     }
