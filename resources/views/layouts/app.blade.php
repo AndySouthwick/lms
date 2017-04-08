@@ -41,7 +41,7 @@
                        @if (Auth::guest()) <a class="navbar-brand" href="{{ url('/') }}">
                         {{ config('app.name', 'Techit') }}
                     </a>
-                    @else <a class="navbar-brand" href="{{ url('/courses') }}">
+                    @else <a class="navbar-brand" href="{{ url('/profile') }}">
                         {{ config('app.name', 'Techit') }}
                     </a>
                     @endif

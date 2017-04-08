@@ -9,6 +9,7 @@
 @section('content')
        @foreach ($courses as $course)
         <div class="col-lg-12">
+        <a href="#">
        <div class="panel panel-default">
        <div class="panel-body">
              <div class="col-lg-12">
@@ -26,7 +27,7 @@
               <div class="col-lg-3">
                {{$course->course_star_rating}}Stars
              </div>
-            </div></div></div>
+            </div></div></a></div>
        @endforeach
 @endsection
 
