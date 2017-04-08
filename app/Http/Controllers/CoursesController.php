@@ -30,7 +30,6 @@ class CoursesController extends Controller
         ->join('courses', 'courses.id', '=', 'courses_tracks.course_id')
         ->join('tracks', 'tracks.id', '=', 'courses_tracks.track_id')
         ->where('courses_tracks.track_id', '=', $id)->get();
-       
         return view('courses')->with('courses', $courses);
 
         

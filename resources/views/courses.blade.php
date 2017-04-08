@@ -8,7 +8,25 @@
 <!--course listing-->
 @section('content')
        @foreach ($courses as $course)
-            {{$course->course_name}}
+        <div class="col-lg-12">
+       <div class="panel panel-default">
+       <div class="panel-body">
+             <div class="col-lg-12">
+            <h4>{{$course->course_name}}</h4>
+            </div>
+             <div class="col-lg-3">
+             By {{$course->by_who}}
+             </div>
+              <div class="col-lg-3">
+              Level {{$course->level}}
+             </div>
+              <div class="col-lg-3">
+              {{$course->course_length}}h
+             </div>
+              <div class="col-lg-3">
+               {{$course->course_star_rating}}Stars
+             </div>
+            </div></div></div>
        @endforeach
 @endsection
 
