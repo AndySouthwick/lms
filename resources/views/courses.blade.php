@@ -7,7 +7,9 @@
 
 <!--course listing-->
 @section('content')
-    <p>This is my course content.</p>
+       @foreach ($courses as $course)
+            {{$course->course_name}}
+       @endforeach
 @endsection
 
 <!--footer-->
