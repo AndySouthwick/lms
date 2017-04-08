@@ -27,6 +27,10 @@ Route::get('/profile', 'ProfileController@index');
 
 Route::resource('/tracks', 'TracksController');
 
-Route::get('/courses', 'CoursesController@index');
+Route::get('/courses/{id}/{track_name}', 'CoursesController@index');
+
+// Route::get('/tracks/{track_name?}',function($name = null)
+// {
+// });
 
 
