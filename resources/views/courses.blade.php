@@ -9,7 +9,7 @@
 @section('content')
        @foreach ($courses as $course)
         <div class="col-lg-12">
-        <a href="#">
+        <a href="#" class="a">
        <div class="panel panel-default">
        <div class="panel-body">
              <div class="col-lg-12">
