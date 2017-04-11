@@ -22,11 +22,14 @@ class VideosController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($id)
+    public function index($course_id)
     {
-        $courses = DB::table('videos');
-        return view('videos');
-
-        
+        $videos = DB::table('videos')->where('course_id', '=', $course_id)->get();
+        return view('videos')->with('videos', $videos);     
+    }
+    public function video($course_id, $id){
+        $videos = DB::table('videos')->where('course_id', '=', $course_id)->get();
+        $video = DB::table('videos')->where('id', '=', $id)->get();
+        return view('videos')->with('videos', $videos);
     }
 }

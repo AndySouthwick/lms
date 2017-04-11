@@ -9,7 +9,7 @@
 @section('content')
        @foreach ($courses as $course)
         <div class="col-lg-12">
-        <a href="/videos/{{$course->course_id}}/{{$course->course_name}}" class="a">
+        <a href="/videos/{{$course->course_id}}/" class="a">
        <div class="panel panel-default">
        <div class="panel-body">
              <div class="col-lg-12">
