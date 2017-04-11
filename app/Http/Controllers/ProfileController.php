@@ -3,13 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 
 class ProfileController extends Controller
 {
     /**
      * Create a new controller instance.
-     *
-     * @return void
      */
     public function __construct()
     {
@@ -18,11 +17,20 @@ class ProfileController extends Controller
 
     /**
      * Show the application dashboard.
-     *
-     * @return \Illuminate\Http\Response
      */
     public function index()
     {
         return view('profile');
+    }
+
+    /**
+     * Edit user data.
+     */
+    public function update()
+    {
+        User::create([
+           'name' => request('name'),
+            'email' => request('email')
+        ]);
     }
 }

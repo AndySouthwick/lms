@@ -29,6 +29,8 @@ Route::resource('/tracks', 'TracksController');
 
 Route::get('/courses/{id}/{track_name}', 'CoursesController@index');
 
+Route::post('/profile/{id}/edit', 'ProfileController@update');
+
 // Route::get('/tracks/{track_name?}',function($name = null)
 // {
 // });
