@@ -28,7 +28,7 @@ class ProfileController extends Controller
      */
     public function update()
     {
-        User::create([
+        User::update([
            'name' => request('name'),
             'email' => request('email')
         ]);
