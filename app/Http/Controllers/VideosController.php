@@ -23,9 +23,10 @@ class VideosController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index($course_id)
-    {
+    {   
+        $courses = DB::table('courses')->where('id', '=', $course_id)->get();
         $videos = DB::table('videos')->where('course_id', '=', $course_id)->get();
-        return view('videos')->with('videos', $videos);     
+        return view('videos')->with('videos', $videos)->with('courses', $courses);     
     }
     public function video($course_id, $id){
         $videos = DB::table('videos')->where('course_id', '=', $course_id)->get();
