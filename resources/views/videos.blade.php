@@ -6,7 +6,10 @@
 @endsection
 @section('content')
 <div class="jumbotron">
-  <p>...</p></div>
+@foreach ($courses as $course) 
+   <p> {{$course->course_name}}</p></div>
+@endforeach
+
 @foreach ($videos as $video)     
       <div class="col-lg-12">
        <div class="bs-callout bs-callout-info">
