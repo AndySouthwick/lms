@@ -5,9 +5,21 @@
 @section('nav')
 @endsection
 @section('content')
-<div class="jumbotron">
+<div class="jumbotron" align="center">     
 @foreach ($courses as $course) 
-   <p> {{$course->course_name}}</p></div>
+  <h2>{{$course->course_name}}</h2>
+
+    @if($selected_videos != NULL)
+  @foreach ($selected_videos as $selected_video)  
+
+        <iframe width="560" height="315" src="{{$selected_video->video_location}}" frameborder="0" allowfullscreen>
+     
+        </iframe>
+
+
+         @endforeach 
+    @endif
+</div>
 @endforeach
 
 @foreach ($videos as $video)     
@@ -15,7 +27,7 @@
        <div class="bs-callout bs-callout-info">
 
              <div class="col-lg-12">
-<a data-toggle="modal" data-target="#{{$video->id}}">
+<a href="/videos/{{$course->id}}/{{$video->id}}">
 <h4>{{$video->video_title}}</h4>
 </a>
             </div>
@@ -23,7 +35,7 @@
             <!-- Button trigger modal -->
 
 <!-- Modal -->
-<div class="modal fade" id="{{$video->id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<!-- <div class="modal fade" id="{{$video->id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -36,6 +48,6 @@
       </div>   
     </div>
   </div>
-</div>
+</div>-->
 @endforeach
 @endsection
