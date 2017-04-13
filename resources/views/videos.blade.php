@@ -5,16 +5,18 @@
 @section('nav')
 @endsection
 @section('content')
+<div class="jumbotron">
+  <p>...</p></div>
 @foreach ($videos as $video)     
       <div class="col-lg-12">
-       <div class="panel panel-default">
-       <div class="panel-body">
+       <div class="bs-callout bs-callout-info">
+
              <div class="col-lg-12">
 <a data-toggle="modal" data-target="#{{$video->id}}">
 <h4>{{$video->video_title}}</h4>
 </a>
             </div>
-            </div></div></a></div>
+            </div></a></div>
             <!-- Button trigger modal -->
 
 <!-- Modal -->
