@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use Auth;
+use Hash;
 
 class ProfileController extends Controller
 {
@@ -29,13 +30,19 @@ class ProfileController extends Controller
      */
     public function update(Request $request)
     {
-        $input = $request->only('name','email');
+        $input = $request->only('name','email','password', 'pass_confirm');
 
         $user = Auth::user(); // Fetch the user model
 
         // Update the fields
         $user->name = $input['name'];
         $user->email = $input['email'];
+        if ($input['password'] != "") {
+            if ($input['password'] == $input['pass_confirm']) {
+                $user->password = Hash::make($input['password']);
+            }
+        }
+
 
         // Save changes
         $user->save();
