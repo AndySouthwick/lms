@@ -6,17 +6,15 @@ use Illuminate\Http\Request;
 
 class WebhooksController extends Controller
 {
+    public function handle()
+    {
+    	if ($payload['type']  == 'customer.subscription.deleted') {
 
-	die(var_dump(request()->()))
-    // public function handle()
-    // {
-    // 	if ($payload['type']  == 'customer.subscription.deleted') {
+    		$user = App\User::where('stripe_id' , $payload['data']['object']['customer'])->firstOrFail();
 
-    // 		$user = App\User::where('stripe_id' , $payload['data']['object']['customer'])->firstOrFail();
+    		$user->deactivate();
 
-    // 		$user->deactivate();
-
-    // 		return response('Webhook Received');
+    		return response('Webhook Received');
     	}
     }
 }
