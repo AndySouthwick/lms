@@ -31,10 +31,7 @@ class ProfileController extends Controller
     public function update(Request $request)
     {
         $input = $request->only('name','email','password', 'pass_confirm');
-
-        $user = Auth::user(); // Fetch the user model
-
-        // Update the fields
+        $user = Auth::user();
         $user->name = $input['name'];
         $user->email = $input['email'];
         if ($input['password'] != "") {
