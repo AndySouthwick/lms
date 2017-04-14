@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Stripe\{Stripe, Charge, Customer};
+use App\Subscription;
 
 class SubscriptionController extends Controller
 {
@@ -22,6 +22,6 @@ class SubscriptionController extends Controller
     		'currency' => 'usd'
     	]);
 
-    	return 'You are now a Member'
+    	return view('subscriptions')->string('You are now a Member');
     }
 }
