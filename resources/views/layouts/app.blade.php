@@ -17,13 +17,22 @@
 
     <!-- Scripts -->
     <script>
+   
+
+    var lms ={
+        csfrToken: "{{csrf_token()}}",
+        stripeKey: "{{ config('services.stripe.key') }}",
+         
+    }
         window.Laravel = {!! json_encode([
             'csrfToken' => csrf_token(),
+            'stripeKey' => config('services.stripe.key')
         ]) !!};
+
+       
     </script>
 </head>
 <body>
-
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">

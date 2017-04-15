@@ -15,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'stripe_id', 'stripe_active',
     ];
 
     /**
@@ -27,32 +27,31 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public function activate($cusotmerId = null)
+    public function activate($customerId)
     {
-        return $this->forceFill([
-                'stripe_id' => $cusotmerId ?? $this->stripe_id,
-                'stripe_active' => true,
-                'subscription_end_at' => null
-            ])->save();
+        return $this->update([
+                'stripe_id' => $customerId,
+                'stripe_active' => true
+            ]);
     }
 
-    public function deactivate()
-    {
-        return $this->forceFill([
-                'stripe_active' => false,
-                'subscription_end_at' => \Carbon\Carbon::now()
-            ])->save();
-    }
+    // public function deactivate()
+    // {
+    //     return $this->forceFill([
+    //             'stripe_active' => false,
+    //             'subscription_end_at' => \Carbon\Carbon::now()
+    //         ])->save();
+    // }
 
-    public function subscription()
-    {
-        return new Subscription($this);
-    }
+    // public function subscription()
+    // {
+    //     return new Subscription($this);
+    // }
 
-    public function isSubscribed ()
-    {
-        return !! $this->stripe_active;
-    }
+    // public function isSubscribed ()
+    // {
+    //     return !! $this->stripe_active;
+    // }
 
     
 }

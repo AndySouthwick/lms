@@ -17,11 +17,12 @@ Route::get('/', function () {
 Route::get('/login', function () {
     return view('auth/login');
 });
-Route::post('/subscriptions', 'SubscriptionController@store');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+    
+Route::post('/subscriptions', 'SubscriptionController@store');
 
 Route::get('/profile', 'ProfileController@index');
 
