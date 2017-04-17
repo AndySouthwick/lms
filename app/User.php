@@ -31,7 +31,7 @@ class User extends Authenticatable
     {
         return $this->update([
                 'stripe_id' => $customerId,
-                'stripe_active' => true
+                'stripe_active' => true1
             ]);
     }
 
@@ -48,10 +48,10 @@ class User extends Authenticatable
     //     return new Subscription($this);
     // }
 
-    // public function isSubscribed ()
-    // {
-    //     return !! $this->stripe_active;
-    // }
+    public function isSubscribed ()
+    {
+        return !! $this->stripe_active;
+    }
 
     
 }

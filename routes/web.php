@@ -21,7 +21,7 @@ Route::get('/login', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
-    
+
 Route::post('/subscriptions', 'SubscriptionController@store');
 
 Route::get('/profile', 'ProfileController@index');

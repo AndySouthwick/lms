@@ -11,6 +11,7 @@ class SubscriptionController extends Controller
     public function store()
 
     {
+		
 		$plan = Plan::findOrFail(request('plan'));
     	
 		//dd(request()->all());
