@@ -4,9 +4,26 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Subscription extends Model
+use Stripe\Customer;
+
+class Subscription
 {
-    protected $fillable = [
-    	'user_id', 'name', 'stirpe_id', 'stripe_plan',  
-    ];
+    protected $user;
+    public function __construct(User $user){
+     
+     $this->user = $user;
+    }
+     public function create(Plan $plan, $token)   {
+
+         $customer = Customer::create([
+    		'email' =>$this->user->email,
+    		'source' => $token,
+			'plan' => $plan->name
+         ]);
+
+
+
+            $this->user->activate($customer->id);
+
+}
 }

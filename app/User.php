@@ -1,7 +1,6 @@
 <?php
 
 namespace App;
-
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -31,7 +30,7 @@ class User extends Authenticatable
     {
         return $this->update([
                 'stripe_id' => $customerId,
-                'stripe_active' => true1
+                'stripe_active' => true
             ]);
     }
 
@@ -43,10 +42,10 @@ class User extends Authenticatable
     //         ])->save();
     // }
 
-    // public function subscription()
-    // {
-    //     return new Subscription($this);
-    // }
+    public function subscription()
+    {
+        return new Subscription($this);
+    }
 
     public function isSubscribed ()
     {
