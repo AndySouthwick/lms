@@ -52,5 +52,10 @@ class User extends Authenticatable
         return !! $this->stripe_active;
     }
 
+    public function getGravatarAttribute()
+    {
+    	$hash = md5(strtolower(trim($this->attributes['email'])));
+    	return "http://www.gravatar.com/avatar/$hash";
+    }
     
 }
