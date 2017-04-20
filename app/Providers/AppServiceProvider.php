@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use stripe\stripe;
+use Stripe\stripe-php;
 
 use Illuminate\Support\ServiceProvider;
 
