@@ -17,7 +17,7 @@ class PlansSeeder extends Seeder
             'price' => 3500),
 
             array('name' => 'Yearly',
-            'price' => '19700')
+            'price' => 19700)
         ));
     }
 }
