@@ -1,27 +1,23 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use Stripe\{Stripe, Charge, Customer};
+use Exception;
+use App\Http\Requests\ResgistrationForm;
 
 class SubscriptionController extends Controller
 {
-    public function store()
+    public function store(ResgistrationForm $form)
 
     {
-    	Stripe::setApiKey(config('services.stripe.secret'));
+		try{
+			$form->save();
+		} catch (Exception $e){
+			return response()->json(['status' => $e->getMessage()], 422);
 
-    	$customer = Customer::create([
-    		'email' => request('stripeEmail'),
-    		'source' => request('stripeToken')
-    	]);  
+		}
 
-    	Charge::create([
-    		'customer' => $cusotmer->id,
-    		'amount' => 2500,
-    		'currency' => 'usd'
-    	]);
-
-    	return 'You are now a Member'
+    	return [
+			'status' => 'Success!'
+		];
     }
 }

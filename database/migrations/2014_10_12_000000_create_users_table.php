@@ -16,8 +16,10 @@ class CreateUsersTable extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
             $table->string('stripe_id')->nullable();
+            $table->boolean('stripe_active')->default(false);
             $table->string('card_brand')->nullable();
             $table->string('card_last_four')->nullable();
+            $table->timestamp('subscription_ends_at');
             $table->timestamp('trial_ends_at')->nullable();
             $table->string('name');
             $table->string('email')->unique();
