@@ -27,7 +27,6 @@ class VideosController extends Controller
         $courses = DB::table('courses')->where('id', '=', $course_id)->get();
         $selected_videos = DB::table('videos')->where('id', '=', $course_id)->get();
         $videos = DB::table('videos')->where('course_id', '=', $course_id)->get();
-        $video = DB::table('videos')->where('id', '=', $course_id)->get();
         return view('videos')->with('videos', $videos)
         ->with('selected_videos', $selected_videos)
         ->with('courses', $courses);
@@ -35,12 +34,14 @@ class VideosController extends Controller
         // $videos = DB::table('videos')->where('course_id', '=', $course_id)->get();
         // return view('videos')->with('videos', $videos)->with('courses', $courses);     
     }
-    public function videos($course_id, $video_id){
-            $courses = DB::table('courses')->where('id', '=', $course_id)->get();
-             $selected_videos = DB::table('videos')->where('id', '=', $course_id)->get();
-             $videos = DB::table('videos')->where('id', '=', $course_id)->get();
-    $videos = DB:: table('videos')->where('id', '=', $video_id)->where('course_id', '=', $course_id);
-     return view('videos')->with('videos', $videos)
+    public function videos( $course_id, $id){
+       
+        $courses = DB::table('courses')->where('id', '=', $course_id)->get();
+        $selected_videos = DB::table('videos')->where('id', '=', $id)->get();
+        $videos = DB::table('videos')->where('course_id', '=', $course_id)->get();
+        $video = DB::table('videos')->where('id', '=', $course_id)->get();
+        $chosen_video = DB:: table('videos')->where('id', '=', $id)->where('course_id', '=', $course_id)->get();
+        return view('videos')->with('videos', $videos)
         ->with('selected_videos', $selected_videos)
         ->with('courses', $courses);
     }

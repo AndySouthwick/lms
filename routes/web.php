@@ -34,7 +34,7 @@ Route::post('/profile/{id}/edit', 'ProfileController@update');
 
 Route::get('/videos/{course_id}/', 'VideosController@index');
 
-Route::get('/videos/{course_id}/{video_id}', 'VideosController@videos');
+Route::get('/videos/{course_id}/{id}', 'VideosController@videos');
 
 
 // Route::get('/tracks/{track_name?}',function($name = null)
