@@ -11,6 +11,7 @@
                         <div class="col-md-4 col-sm-6 col-xs-12">
                             <div class="text-center">
                                 <img src="{{ Auth::user()->gravatar }}" class="avatar img-circle img-thumbnail" alt="avatar">
+                                <hr>
                                 <a href="http://www.gravatar.com">Upload a different photo on Gravatar</a>
                             </div>
                         </div>
