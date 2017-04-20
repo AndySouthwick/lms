@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use Stripe\Customer;
+use Stripe\Stripe;
 
 use Illuminate\Support\ServiceProvider;
 
