@@ -10,7 +10,7 @@
                         <!-- left column -->
                         <div class="col-md-4 col-sm-6 col-xs-12">
                             <div class="text-center">
-                                <img src="http://tilextile.com/assets/profile_placeholder-3242dfe5bfcf57f3284beff4421e8b1e.png" class="avatar img-circle img-thumbnail" alt="avatar">
+                                <img src="{{ Auth::user()->gravatar }}" class="avatar img-circle img-thumbnail" alt="avatar">
                                 <h6>Upload a different photo...</h6>
                                 <input type="file" class="text-center center-block well well-sm img-input">
                             </div>
