@@ -5,22 +5,21 @@
  # Profile - Managing -> pic, contact info, subscriptions
  # Use Collections to produce JSON file
  # Deployment is done with Linode 
- # 1. Video Section - Videos -> Video
- # 2. Videos will have comments and Meta Data 
- # 3. Payment -> Swipe, signing up for the subscription  
- # 4. Profile - Managing -> pic, contact info, subscriptions
- # 5. Use Collections to produce JSON file
- # 6. Deployment is done with Linode 
+ # 1. Video Section - Videos -> Video 
+ # 2. Payment -> Stipe, signing up for the subscription  
+ # 3. Profile - Managing -> pic, contact info, subscriptions
+ # 4. Use Collections to produce JSON file
+ # 5. Deployment is done with Linode 
  
  # Responsibilities
  
  Adrien - Profile
  
- Chad - API
+ Chad - Deployment and Gravatar
 
- Tyson - Payments with Swipe
+ Tyson - Design and Styliation 
  
- Andy - Videos & Video Section
+ Andy - Videos & Video Section + Payments with Stipe
  
  Everyone - Creates their own migration 
  
