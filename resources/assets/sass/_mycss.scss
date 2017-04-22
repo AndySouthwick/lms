@@ -179,3 +179,43 @@ p {
 }
 
 /*Socail Icons*/
+
+
+
+/*-- banner --*/
+.banner{
+	background:url(../images/header.jpg) no-repeat 0px 0px;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+	min-height:900px;
+	position: relative;
+}
+.banner1{
+	background:url(../images/header.jpg) no-repeat 0px 0px;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+	min-height:300px;
+}
+/*--Banner--*/
+
+/*--Typed Text--*/
+
+#typed{
+	font-size:2em;
+	color:#fff;
+/*	text-transform:capitalize;*/
+	line-height:1.5em;
+}
+#typed i{
+	font-style:normal;
+	color:rgba(10, 204, 255, 0.62);
+	font-weight:600;
+}
+
+/*--Typed Text--*/
