@@ -104,8 +104,33 @@
         @yield('content')
         </div>
     </div>
-  
-        
+
+<!--Footer-->
+  <div class="footer">
+		<div class="container">
+			
+			<div class="agile_footer_copy">
+				<div class="footer_grids">
+					
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class="copy_right_social">
+				<div class="col-md-6 copy_right">
+					<p>&copy; 2017. All rights reserved | <a href="#">Adrien, Andy, Chad & Tyson Dev & Design</a></p>
+				</div>
+				<div class="col-md-6 agile_copy_right">
+					<ul class="agileinfo_social_icons">
+						<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!--Footer-->
         
 
     <!-- Scripts -->    <script src="{{ asset('js/app.js') }}"></script>
