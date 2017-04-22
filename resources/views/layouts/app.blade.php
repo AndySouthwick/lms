@@ -12,8 +12,7 @@
     @yield('title')
     </title>
 
-    <!--Bootstrap-->
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+
      
      <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600" rel="stylesheet">
