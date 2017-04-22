@@ -14,6 +14,8 @@
 
      <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600" rel="stylesheet">
+    <!--Font Awesome-->
+        <link href="css/font-awesome.css" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
