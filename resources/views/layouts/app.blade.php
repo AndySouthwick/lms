@@ -12,6 +12,9 @@
     @yield('title')
     </title>
 
+     <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600" rel="stylesheet">
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
