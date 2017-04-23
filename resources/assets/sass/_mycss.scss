@@ -182,9 +182,10 @@ p {
 
 
 
+
 /*-- banner --*/
 .banner{
-	background:url(../images/header.jpg) no-repeat 0px 0px;
+	background:url(../images/banner.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -194,7 +195,7 @@ p {
 	position: relative;
 }
 .banner1{
-	background:url(../images/header.jpg) no-repeat 0px 0px;
+	background:url(../images/banner.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -202,13 +203,43 @@ p {
 	-ms-background-size:cover;
 	min-height:300px;
 }
+
+@media (max-width: 1280px){
+    .banner {
+		min-height: 700px;
+	}
+}
+
+@media (max-width: 1024px){
+    .banner {
+		min-height: 650px;
+		background-position: -180px 0px;
+	}
+    	.banner1 {
+		min-height: 220px;
+	}
+}
+
+@media (max-width: 1080px){
+    .banner {
+		background-position:-200px 0px;
+	}
+}
+
+@media (max-width: 800px){
+    .banner {
+		min-height: 590px;
+		background-position: -280px 0px;
+	}
+}
+
 /*--Banner--*/
 
 /*--Typed Text--*/
 
 #typed{
-	font-size:2em;
-	color:#fff;
+	font-size:4em;
+	color:#000;
 /*	text-transform:capitalize;*/
 	line-height:1.5em;
 }
@@ -219,3 +250,4 @@ p {
 }
 
 /*--Typed Text--*/
+
