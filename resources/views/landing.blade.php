@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.front')
 
 @section('title', 'Tech Teach')
 
@@ -18,7 +18,7 @@
 
 <!--course listing-->
 @section('content')
-    <p>Welcome To Tech---</p>
+    
 @endsection
 
 <!--footer-->

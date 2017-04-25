@@ -1,3 +1,19 @@
+body, html {
+   height: 100%;
+}
+
+.bg {
+   /* The image used */
+
+   /* Full height */
+   height: 100%;
+   background-image: url('images/banner.jpg');
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
 p {
     margin:10px;
 }
@@ -13,4 +29,8 @@ p {
 }
  a:link {
     text-decoration: none;
+}
+
+.navbar{
+  opacity: .8;
 }
