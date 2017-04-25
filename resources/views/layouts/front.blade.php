@@ -44,7 +44,7 @@ body, html {
 
 .bg{
    /* The image used */
-   background-image: 'images/banner.jpg';
+   background-image: url('images/banner.jpg');
 
    /* Full height */
    height: 100%;
@@ -54,11 +54,14 @@ body, html {
    background-repeat: no-repeat;
    background-size: cover;
 }
+.myop{
+    opacity: .8;
+}
 
  </style>
 </head>
 <body>
-    <div class="bg">
+<div class="bg">
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
@@ -297,7 +300,7 @@ body, html {
 
 <link href="css/app.css" rel="stylesheet" type="text/css" media="all" />
 
-  <div class="footer">
+  <div class="footer myop">
 		<div class="container">
 			
 			<div class="agile_footer_copy">
@@ -317,15 +320,14 @@ body, html {
 						<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
+			
+
 
 <!--Footer-->
         
 
     <!-- Scripts -->    <script src="{{ asset('js/app.js') }}"></script>
 
-    </div>
+   
 </body>
 </html>
