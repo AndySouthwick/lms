@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.front')
 
 @section('title', 'Tech Teach')
 
@@ -21,7 +21,8 @@
 
 <!--Landing Page Content with scrolling text-->
 
-     <body>
+
+		
 
 	<div class="banner">
 		
@@ -30,6 +31,7 @@
 				
 					
 					<div id="typed-strings" class="agileits_strings">
+						
                         <p>Master <i>Angular.JS</i></p>
 						<p>or perhaps <i>Laravel</i></p>
 						<p>maybe you want to brush up <br>on your <i>HTML & CSS</i></p>
@@ -40,40 +42,39 @@
 			
 			
 			
-			
+		</div>	
 	</div>
 
 
-	<script src="js/typed.js" type="text/javascript"></script>
     <script>
-		$(function(){
+		// $(function(){
 
-			$("#typed").typed({
-				// strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
-				stringsElement: $('#typed-strings'),
-				typeSpeed: 30,
-				backDelay: 500,
-				loop: false,
-				contentType: 'html', // or text
-				// defaults to false for infinite loop
-				loopCount: false,
-				callback: function(){ foo(); },
-				resetCallback: function() { newTyped(); }
-			});
+		// 	$("#typed").typed({
+		// 		// strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+		// 		stringsElement: $('#typed-strings'),
+		// 		typeSpeed: 30,
+		// 		backDelay: 500,
+		// 		loop: false,
+		// 		contentType: 'html', // or text
+		// 		// defaults to false for infinite loop
+		// 		loopCount: false,
+		// 		callback: function(){ foo(); },
+		// 		resetCallback: function() { newTyped(); }
+		// 	});
 
-			$(".reset").click(function(){
-				$("#typed").typed('reset');
-			});
+		// 	$(".reset").click(function(){
+		// 		$("#typed").typed('reset');
+		// 	});
 
-		});
+		// });
 
-		function newTyped(){ /* A new typed object */ }
+		// function newTyped(){ /* A new typed object */ }
 
-		function foo(){ console.log("Callback"); }
+		// function foo(){ console.log("Callback"); }
+		
     </script>
 
 <!--Landing Page Content with scrolling text-->
-
 @endsection
 
 <!--footer-->

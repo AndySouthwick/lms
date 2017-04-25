@@ -2,14 +2,13 @@
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 //bootstrap sticky-footer
-@import "stickyfooter";
 // Variables
 @import "variables";
 // Font Awesome Minified for Speed
-@import "font_awesome";
+
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 //mystyles
 @import "mycss";
-
+@import "font-awesome";

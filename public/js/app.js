@@ -6,9 +6,9 @@
 /******/ 	function __webpack_require__(moduleId) {
 /******/
 /******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId])
+/******/ 		if(installedModules[moduleId]) {
 /******/ 			return installedModules[moduleId].exports;
-/******/
+/******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = installedModules[moduleId] = {
 /******/ 			i: moduleId,
@@ -947,7 +947,7 @@ var app = new Vue({
 /* 9 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: ModuleNotFoundError: Module not found: Error: Can't resolve '../fonts/fontawesome-webfont.eot?v=4.6.3' in '/home/vagrant/Code/lms/resources/assets/sass'\n    at factoryCallback (/home/vagrant/Code/lms/node_modules/webpack/lib/Compilation.js:260:39)\n    at factory (/home/vagrant/Code/lms/node_modules/webpack/lib/NormalModuleFactory.js:247:20)\n    at resolver (/home/vagrant/Code/lms/node_modules/webpack/lib/NormalModuleFactory.js:65:21)\n    at asyncLib.parallel.e (/home/vagrant/Code/lms/node_modules/webpack/lib/NormalModuleFactory.js:138:21)\n    at /home/vagrant/Code/lms/node_modules/webpack/node_modules/async/dist/async.js:3824:9\n    at /home/vagrant/Code/lms/node_modules/webpack/node_modules/async/dist/async.js:460:16\n    at iteratorCallback (/home/vagrant/Code/lms/node_modules/webpack/node_modules/async/dist/async.js:1032:13)\n    at /home/vagrant/Code/lms/node_modules/webpack/node_modules/async/dist/async.js:944:16\n    at /home/vagrant/Code/lms/node_modules/webpack/node_modules/async/dist/async.js:3821:13\n    at apply (/home/vagrant/Code/lms/node_modules/webpack/node_modules/async/dist/async.js:21:25)\n    at /home/vagrant/Code/lms/node_modules/webpack/node_modules/async/dist/async.js:56:12\n    at resolvers.normal.resolve (/home/vagrant/Code/lms/node_modules/webpack/lib/NormalModuleFactory.js:130:23)\n    at onResolved (/home/vagrant/Code/lms/node_modules/enhanced-resolve/lib/Resolver.js:70:11)\n    at loggingCallbackWrapper (/home/vagrant/Code/lms/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at afterInnerCallback (/home/vagrant/Code/lms/node_modules/enhanced-resolve/lib/Resolver.js:138:10)\n    at loggingCallbackWrapper (/home/vagrant/Code/lms/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at Resolver.applyPluginsAsyncSeriesBailResult1 (/home/vagrant/Code/lms/node_modules/tapable/lib/Tapable.js:181:46)\n    at innerCallback (/home/vagrant/Code/lms/node_modules/enhanced-resolve/lib/Resolver.js:125:19)\n    at loggingCallbackWrapper (/home/vagrant/Code/lms/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at /home/vagrant/Code/lms/node_modules/tapable/lib/Tapable.js:283:15\n    at /home/vagrant/Code/lms/node_modules/enhanced-resolve/lib/UnsafeCachePlugin.js:38:4\n    at loggingCallbackWrapper (/home/vagrant/Code/lms/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at afterInnerCallback (/home/vagrant/Code/lms/node_modules/enhanced-resolve/lib/Resolver.js:138:10)\n    at loggingCallbackWrapper (/home/vagrant/Code/lms/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at Resolver.applyPluginsAsyncSeriesBailResult1 (/home/vagrant/Code/lms/node_modules/tapable/lib/Tapable.js:181:46)\n    at innerCallback (/home/vagrant/Code/lms/node_modules/enhanced-resolve/lib/Resolver.js:125:19)\n    at loggingCallbackWrapper (/home/vagrant/Code/lms/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at /home/vagrant/Code/lms/node_modules/tapable/lib/Tapable.js:283:15\n    at innerCallback (/home/vagrant/Code/lms/node_modules/enhanced-resolve/lib/Resolver.js:123:11)\n    at loggingCallbackWrapper (/home/vagrant/Code/lms/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)");
 
 /***/ }),
 /* 10 */
@@ -14582,7 +14582,7 @@ var Component = __webpack_require__(33)(
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/asouthwick01/dev/lms/resources/assets/js/components/CheckoutForm.vue"
+Component.options.__file = "/home/vagrant/Code/lms/resources/assets/js/components/CheckoutForm.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] CheckoutForm.vue: functional components are not supported with templates, they should use render functions.")}
 

@@ -42,9 +42,9 @@ body, html {
    height: 100%;
 }
 
-.bg {
+.bg{
    /* The image used */
-   background-image: url('images/banner.jpg');
+   background-image: 'images/banner.jpg';
 
    /* Full height */
    height: 100%;
@@ -55,12 +55,10 @@ body, html {
    background-size: cover;
 }
 
-.opacityhalf{
- opacity
-}
  </style>
 </head>
 <body>
+    <div class="bg">
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
@@ -328,6 +326,6 @@ body, html {
 
     <!-- Scripts -->    <script src="{{ asset('js/app.js') }}"></script>
 
-    
+    </div>
 </body>
 </html>
