@@ -34,7 +34,8 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-default navbar-top">
+        <div class="background">
+        <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
 
@@ -100,6 +101,7 @@
         <div class="container">
         @yield('content')
         </div>
+    </div>
 
         <footer class="footer">
         <div class="container">
