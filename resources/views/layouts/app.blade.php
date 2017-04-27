@@ -34,6 +34,7 @@
 </head>
 <body>
     <div id="app">
+        <div class="background">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
@@ -101,13 +102,14 @@
         @yield('content')
         </div>
     </div>
-  
+
         <footer class="footer">
         <div class="container">
         <p>This is my footer content.</p>
         </div>
        </footer>
         </div>
+
 
     <!-- Scripts -->    <script src="{{ asset('js/app.js') }}"></script>
 
