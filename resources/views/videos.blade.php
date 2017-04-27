@@ -5,14 +5,14 @@
 @section('nav')
 @endsection
 @section('content')
-<div class="jumbotron" align="center">     
+<div class="opacity" align="center">     
 @foreach ($courses as $course) 
   <h2>{{$course->course_name}}</h2>
 
     @if($selected_videos != NULL)
   @foreach ($selected_videos as $selected_video)  
 
-        <iframe width="560" height="315" src="{{$selected_video->video_location}}" frameborder="0" allowfullscreen>
+        <iframe width="900" height="500" src="{{$selected_video->video_location}}" frameborder="0" allowfullscreen>
      
         </iframe>
 

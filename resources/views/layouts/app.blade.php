@@ -35,8 +35,8 @@
 <body>
 <div class="wrapper">
     <div id="app">
-        <nav class="navbar navbar-default navbar-static-top">
-            <div class="container">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container ">
                 <div class="navbar-header">
 
                     <!-- Collapsed Hamburger -->
@@ -98,17 +98,16 @@
             </div>
         </nav>
 
-        <div class="container">
+        <div class="container mycontainer">
         @yield('content')
         </div>
     </div>
-  
         <footer class="footer">
         <div class="container">
         <p>This is my footer content.</p>
-        </div>
-       </footer>
-        </div>
+        </div> 
+        </footer>
+  </div> 
 
     <!-- Scripts -->    <script src="{{ asset('js/app.js') }}"></script>
 
