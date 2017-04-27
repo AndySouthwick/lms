@@ -35,7 +35,7 @@ body {
 div, body{
   margin: 0;
   padding: 0;
-  font-family: exo, sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   
 }
 .wrapper {
@@ -69,6 +69,7 @@ div, body{
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
 }
 
+
 .inverse{
     background-color: #1b1b1b;
   background-image: -moz-linear-gradient(top, #222222, #111111);
@@ -85,8 +86,8 @@ div, body{
 .inverse-padd{
   padding:15px;
 }
-.panel{
-
+.inverse-margin{
+  margin-top:15px;
 }
 .btn{
    padding:15px;

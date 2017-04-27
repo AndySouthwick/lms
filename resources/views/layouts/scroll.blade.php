@@ -102,7 +102,7 @@
         @yield('content')
         </div>
    
-        <footer class="footer stickyfooter inverse-margin">
+        <footer class="footer inverse-margin">
         <div class="container">
         <p>This is my footer content.</p>
         </div> 

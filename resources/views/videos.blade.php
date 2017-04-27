@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.scroll')
 
 @section('title', 'Videos')
 <!--navigation-->
