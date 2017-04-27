@@ -18,7 +18,10 @@
 
 <!--course listing-->
 @section('content')
-    <p>Welcome To Tech---</p>
+    <div class="intro-text centered">
+        <h1>TechIt</h1>
+        <a href="#" title="Play video" class="play"></a>
+    </div>
 @endsection
 
 <!--footer-->
