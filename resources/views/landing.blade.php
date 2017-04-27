@@ -18,7 +18,9 @@
 
 <!--course listing-->
 @section('content')
+    <div class="jumbotron">
     <p>Welcome To Tech---</p>
+    </div>
 @endsection
 
 <!--footer-->
