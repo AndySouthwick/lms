@@ -18,7 +18,25 @@
 
 <!--course listing-->
 @section('content')
-    <p>Welcome To Tech---</p>
+ <p>Welcome To Tech---</p>
+{{-- <div class="container-fluid">
+  </div>
+  
+
+
+
+<div class="row pushdown">
+<div class="col-lg-4"> </div>
+    <div class="col-lg-4"> 
+        <img alt="Responsive across devices" src="http://forum.clanspeak.ro/uploads/videos/thumbnails/thumb_35.png" class="img-responsive"> 
+    </div>
+    <div class="col-lg-4"> </div>
+</div>
+<div class="row">
+        {{-- <div class="bgcolordrkgrey"><h3>One framework, every device.</h3>
+            <p>Bootstrap easily and efficiently scales your websites and applications with a single code base, from phones to tablets to desktops with CSS media queries.</p> 
+        </div> --}}
+</div>--}}
 @endsection
 
 <!--footer-->

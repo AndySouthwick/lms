@@ -4,8 +4,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Edit Profile</div>
+                <div class="panel panel-default inverse">
+                    <div class="panel-heading inverse"><span class="white">Edit Profile</span></div>
                     <div class="row edit-profile-form">
                         <!-- left column -->
                         <div class="col-md-4 col-sm-6 col-xs-12">

@@ -14,7 +14,7 @@
         <a href="/videos/{{$course->course_id}}/" class="a">
     
        <div class="panel panel-default">
-       <div class="panel-body">
+       <div class="panel-body inverse">
              <div class="col-lg-12">
             <h4>{{$course->course_name}}</h4>
             </div>
