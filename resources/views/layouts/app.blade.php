@@ -105,7 +105,7 @@
 
         <footer class="footer">
         <div class="container">
-        <p>This is my footer content.</p>
+        <p>&copy; 2017 Awesome Possum</p>
         </div>
        </footer>
         </div>
