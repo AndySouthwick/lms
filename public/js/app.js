@@ -1812,6 +1812,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['plans'],
@@ -14692,7 +14693,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "value": plan.id
       }
     }, [_vm._v("\n            " + _vm._s(plan.name) + " — $" + _vm._s(plan.price / 100) + "\n        ")])
-  })), _vm._v(" "), _c('button', {
+  })), _vm._v(" "), _c('br'), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-primary",
     attrs: {
       "type": "submit"
     },
@@ -14702,7 +14704,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.subscribe($event)
       }
     }
-  }, [_vm._v("Subscribe To Test")]), _vm._v(" "), _c('p', {
+  }, [_vm._v("Subscribe!")]), _vm._v(" "), _c('p', {
     directives: [{
       name: "show",
       rawName: "v-show",

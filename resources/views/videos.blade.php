@@ -7,12 +7,12 @@
 @section('content')
 <div class="opacity" align="center">     
 @foreach ($courses as $course) 
-  <h2>{{$course->course_name}}</h2>
+  <h2 class="inverse inverse-padd">{{$course->course_name}}</h2>
 
     @if($selected_videos != NULL)
   @foreach ($selected_videos as $selected_video)  
 
-        <iframe width="900" height="500" src="{{$selected_video->video_location}}" frameborder="0" allowfullscreen>
+        <iframe width="100%" height="600" src="{{$selected_video->video_location}}" frameborder="0" allowfullscreen>
      
         </iframe>
 
@@ -23,15 +23,15 @@
 @endforeach
 
 @foreach ($videos as $video)     
-      <div class="col-lg-12">
-       <div class="bs-callout bs-callout-info">
+    
+      
 
-             <div class="col-lg-12">
+             <div class="col-lg-12 inverse">
 <a href="/videos/{{$course->id}}/{{$video->id}}">
 <h4>{{$video->video_title}}</h4>
 </a>
-            </div>
-            </div></a></div>
+          
+            </div></a>
             <!-- Button trigger modal -->
 
 <!-- Modal -->

@@ -5,11 +5,11 @@
 @section('content')
 
     @foreach ($tracks as $track)
-    <div class="col-lg-6">
+    <div class="col-lg-6 " >
         <a href="/courses/{{$track->id}}/{{$track->track_name}}" class="a">
 
     <div class="panel panel-default">
-         <div class="panel-body">
+         <div class="panel-body inverse">
          
           <div class="col-lg-3"><img src="{{$track->track_image_location}}" width="100"/></div>
        <div class="col-lg-9"><h2>{{$track->track_name}}</h2></div>

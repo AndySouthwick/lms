@@ -9,7 +9,8 @@
             {{plan.name}} &mdash; ${{plan.price / 100}}
         </option>
     </select>
-    <button type="submit"  @click.prevent="subscribe">Subscribe To Test</button> 
+    <br/>
+    <button  class="btn btn-lg btn-primary" type="submit"  @click.prevent="subscribe">Subscribe!</button> 
     <p class="alert alert-danger" v-show="status" v-text="status"></p>
 </form>
 
