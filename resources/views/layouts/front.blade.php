@@ -101,7 +101,7 @@
 
         <div class="container">
         @yield('content')
-        </div>
+        </div></div>
     </div>
   
         <div class="footer">
