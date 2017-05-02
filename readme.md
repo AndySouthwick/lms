@@ -1,6 +1,8 @@
 
- #DGM4790Final
+ # DGM4790Final
+
     This is am LMS progressive web application built with laravel
+    
     the payment processor is built with VueJS
  
  - Video Section - Videos -> Video
