@@ -18,7 +18,20 @@
 
 <!--course listing-->
 @section('content')
- <p>Welcome To Tech---</p>
+<div class="row">
+    <div class="col-lg-4"> 
+         <h1 class="textbg">Welcome To TechIt</h1>
+    </div>
+    <div class="col-lg-4 col-md-offset-4" > 
+        <h1 class="textbg">Find Your Zen</h1>
+    </div>
+</div>
+<div class="spacer">
+    <div class="col-md-4 col-md-offset-4 text-center " > 
+        <img src="images/play.png ">
+    </div>
+</div>
+
 {{-- <div class="container-fluid">
   </div>
   
@@ -36,7 +49,7 @@
         {{-- <div class="bgcolordrkgrey"><h3>One framework, every device.</h3>
             <p>Bootstrap easily and efficiently scales your websites and applications with a single code base, from phones to tablets to desktops with CSS media queries.</p> 
         </div> --}}
-</div>--}}
+</div>
 @endsection
 
 <!--footer-->
