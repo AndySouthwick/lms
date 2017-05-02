@@ -3,17 +3,17 @@
     This is am LMS progressive web application built with laravel
     the payment processor is built with VueJS
  
- Video Section - Videos -> Video
- Videos will have comments and Meta Data 
- Payment -> Stripe, signing up for the subscription  
- Profile - Managing -> pic, contact info, subscriptions
- Use Collections to produce JSON file
- Deployment is done with Linode 
- 1. Video Section - Videos -> Video 
- 2. Payment -> Stripe, signing up for the subscription  
- 3. Profile - Managing -> pic, contact info, subscriptions
- 4. Use Collections to produce JSON file
- 5. Deployment is done with Linode 
+ - Video Section - Videos -> Video
+ - Videos will have comments and Meta Data 
+ - Payment -> Stripe, signing up for the subscription  
+ - Profile - Managing -> pic, contact info, subscriptions
+ - Use Collections to produce JSON file
+ - Deployment is done with Linode 
+ - 1. Video Section - Videos -> Video 
+ - 2. Payment -> Stripe, signing up for the subscription  
+ - 3. Profile - Managing -> pic, contact info, subscriptions
+ - 4. Use Collections to produce JSON file
+ - 5. Deployment is done with Linode 
  
  # Responsibilities
  
