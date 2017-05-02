@@ -10,6 +10,8 @@
  - Payment -> Stripe, signing up for the subscription  
  - Profile - Managing -> pic, contact info, subscriptions
  - Use Collections to produce JSON file
+ - Live Tutoring Section with mesaging application
+ - Live classes making it easier for students to ask questions
 
  
  # Responsibilities
