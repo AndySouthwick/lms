@@ -28,7 +28,7 @@
  Everyone - Creates their own migration 
  
  # DataBase
- Use Maria as the Database 
+ Use mySQL as the Database 
  
  
  # Objects:
