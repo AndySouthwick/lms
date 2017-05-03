@@ -1,4 +1,4 @@
-@extends('layouts.scroll')
+@extends('layouts.nobgscroll')
 
 @section('title', 'Videos')
 <!--navigation-->

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.nobg')
 
 @section('title', 'Courses')
 <!--navigation-->

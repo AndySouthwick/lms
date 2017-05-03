@@ -1,18 +1,19 @@
 
 <template>
       
-
+<div> 
 <form action="/subscriptions" method="POST" >
 
-  <select name="plan" v-model="plan">
+  <!--<select name="plan" v-model="plan">
         <option v-for="plan in plans" :value="plan.id">
             {{plan.name}} &mdash; ${{plan.price / 100}}
         </option>
-    </select>
+    </select>-->
     <br/>
-    <button  class="btn btn-lg btn-primary" type="submit"  @click.prevent="subscribe">Subscribe!</button> 
+    <button  class="btn btn-lg btn-primary" type="submit"  @click.prevent="subscribe">Try It Now!</button> 
     <p class="alert alert-danger" v-show="status" v-text="status"></p>
 </form>
+</div>
 
 </template>
 <script>

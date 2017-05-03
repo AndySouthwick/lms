@@ -1813,6 +1813,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['plans'],
@@ -14661,39 +14662,12 @@ module.exports = function normalizeComponent (
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('form', {
+  return _c('div', [_c('form', {
     attrs: {
       "action": "/subscriptions",
       "method": "POST"
     }
-  }, [_c('select', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.plan),
-      expression: "plan"
-    }],
-    attrs: {
-      "name": "plan"
-    },
-    on: {
-      "change": function($event) {
-        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
-          return o.selected
-        }).map(function(o) {
-          var val = "_value" in o ? o._value : o.value;
-          return val
-        });
-        _vm.plan = $event.target.multiple ? $$selectedVal : $$selectedVal[0]
-      }
-    }
-  }, _vm._l((_vm.plans), function(plan) {
-    return _c('option', {
-      domProps: {
-        "value": plan.id
-      }
-    }, [_vm._v("\n            " + _vm._s(plan.name) + " — $" + _vm._s(plan.price / 100) + "\n        ")])
-  })), _vm._v(" "), _c('br'), _vm._v(" "), _c('button', {
+  }, [_c('br'), _vm._v(" "), _c('button', {
     staticClass: "btn btn-lg btn-primary",
     attrs: {
       "type": "submit"
@@ -14704,7 +14678,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.subscribe($event)
       }
     }
-  }, [_vm._v("Subscribe!")]), _vm._v(" "), _c('p', {
+  }, [_vm._v("Try It Now!")]), _vm._v(" "), _c('p', {
     directives: [{
       name: "show",
       rawName: "v-show",
@@ -14715,7 +14689,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     domProps: {
       "textContent": _vm._s(_vm.status)
     }
-  })])
+  })])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
