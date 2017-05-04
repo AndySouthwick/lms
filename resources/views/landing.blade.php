@@ -20,7 +20,7 @@
 @section('content')
 <div class="row">
     <div class="col-lg-4"> 
-         <h1 class="textbg">Welcome To TechIt</h1>
+         <h1 class="textbg">Welcome To King of Tuts</h1>
     </div>
     <div class="col-lg-4 col-md-offset-4" > 
         <h1 class="textbg">Find Your Zen</h1>
