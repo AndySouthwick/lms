@@ -102,12 +102,14 @@
         @yield('content')
         </div>
    
-        <footer class="footer stickyfooter inverse-margin">
+
+  </div>
+
+    <footer class="footer stickyfooter inverse-margin">
         <div class="container">
-        <p>This is my footer content.</p>
-        </div> 
-        </footer>
-  </div> 
+            <p>This is my footer content.</p>
+        </div>
+    </footer>
 
     <!-- Scripts -->    <script src="{{ asset('js/app.js') }}"></script>
 
