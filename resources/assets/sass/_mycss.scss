@@ -129,16 +129,23 @@ height: 500px;
 }
 .inverse{
   background-color: #363636;
+  color:white;
 }
 
 .my-panel-heading{
   background-color: #363636;
   padding: 10px 15px;
-   
+   color:white;
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
 }
 
 .panel-default{
   border: transparent;
+  color:white;
+}
+
+a:hover, a:focus {
+  color: transparent;
+  text-decoration: none;
 }
