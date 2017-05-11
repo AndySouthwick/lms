@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <div class="panel panel-default inverse">
-                    <div class="panel-heading inverse"><span class="white">Edit Profile</span></div>
+                <div class="my-panel-heading" align="center"><img src="images/whiteninja.png" alt="" width="200">Edit Profile</div>
                     <div class="row edit-profile-form">
                         <!-- left column -->
                         <div class="col-md-4 col-sm-6 col-xs-12">
