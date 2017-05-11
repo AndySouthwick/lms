@@ -1,116 +1,130 @@
-p {
-    margin:10px;
+/*set body background image for front*/
+	* { margin: 0; padding: 0; }
+		
+		body, html {  
+			background-color: 
+      #2d1a19; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+      font-size: 110%;
+		}
+		
+/*set font*/
+    body{
+      font-family: 'Titillium Web', sans-serif;
+    }
+
+/*adjust jumbotron styles*/
+    .jumbotron{
+      background: 
+        linear-gradient(
+          rgba(66, 4, 4, 0.45),
+          rgba(29, 2, 2, 0.45)
+        ),
+      url(../images/bg.jpeg);
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      -webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+      color: white !important;
+      padding-bottom: 15em;
+      
+    }
+
+.pagecontent{
+  margin-top: 35em;
+  position: relative;
 }
-.a {
-   color:#333333;
+/*backgrounds for sections*/
+.textbgwhite{
+      background-color: white;
+      color: #333;
+    }
+  .textbgblue{
+  background-color: #D1E2E6;
+  color:#fff;
+  padding:20px;
+  text-align: center;
+  width:100%;
 }
-.edit-profile-form {
-  padding:30px;
+
+.textbgorange{ 
+  background-color: #2d1a19; 
+  color:#fff;
+  width:100%;
 }
-.img-input {
-  width: 100%;
-   text-decoration: none;
+
+.textbggrey{
+  background: 
+  linear-gradient(#333,#2d1a19);
+  color:#fff;
+  padding:20px;
+  text-align: center;
+  width:100%;
 }
- a:link {
+
+.textblack{
+  background-color: black;
+  color:#fff;
+  padding:20px;
+  width:100%;
+}
+/*end background for sections*/
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  color:#94A3A8;
+  text-decoration: none;
+}
+a:hover {
     text-decoration: none;
+    color: white;
 }
 
-html, body{
-  height: 100%;
-}
-body { 
-			background-image: url(images/saltlake.jpeg) ;
-			background-position: center center;
-			background-repeat:  no-repeat;
-			background-attachment: fixed;
-			background-size:  cover;
-			background-color: #999;
-  
-}
+.playbuttonspacer { position:relative; margin:0; padding:0; top:100px; bottom:50px;}
 
-.nobgimg { 
-
-			background-position: center center;
-			background-repeat:  no-repeat;
-			background-attachment: fixed;
-			background-size:  cover;
-			background-color: #000000;
-  
-}
 .mycontainer{
   padding-top:150px;
 }
 
-.textbg{
-  background-color: #333;
-  color:#fff;
-  padding:20px;
-  text-align: center;
-}
-
 .spacer { position:relative; margin:0; padding:0; top:50px; }
 
-div, body{
-  margin: 0;
-  padding: 0;
-  font-family: 'Titillium Web', sans-serif;
+.ninjavideo{
+     width: 100%;
+}
+.navbar-inverse{
+  background-color: black;
+}
+.quote{
+  background-image: url(../images/quote-mark.png);
+  background-repeat: no-repeat;
+  padding: 15px;
+}
+.img-circle {
+    border-radius: 50%;
+}
+
+.modal-content{
+  background-color: #2d1a19;
   
 }
-.wrapper {
-  height: 100%; 
-  width: 100%; 
-}
+.modal-body{
+height: 500px;
 
-.message {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%; 
-  height:45%;
-  bottom: 0; 
-  display: block;
-  position: absolute;
-  background-color: rgba(0,0,0,0.6);
-  color: #fff;
-  padding: 0.5em;
 }
-
-.footer {
-  background-color: #1b1b1b;
-  background-image: -moz-linear-gradient(top, #222222, #111111);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));
-  background-image: -webkit-linear-gradient(top, #222222, #111111);
-  background-image: -o-linear-gradient(top, #222222, #111111);
-  background-image: linear-gradient(to bottom, #222222, #111111);
-  background-repeat: repeat-x;
-  border-color: #252525;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
-}
-
-
-.inverse{
-  background-color: #1b1b1b;
-  background-image: -moz-linear-gradient(top, #222222, #111111);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));
-  background-image: -webkit-linear-gradient(top, #222222, #111111);
-  background-image: -o-linear-gradient(top, #222222, #111111);
-  background-image: linear-gradient(to bottom, #222222, #111111);
-  background-repeat: repeat-x;
-  border-color: #252525;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
-  color:#fff;
-}
-
-.inverse-padd{
-  padding:15px;
-}
-.inverse-margin{
-  margin-top:15px;
-}
-.btn{
-   padding:15px;
-}
-
-.white{
-  color: #fff;
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
