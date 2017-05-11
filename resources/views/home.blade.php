@@ -5,11 +5,11 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default inverse" align="center">
-                <div class="panel-heading inverse"> <span class="white"><h2>Welcome</h2></span></div>
+                <div class="my-panel-heading" align="center"><img src="images/whiteninja.png" alt="" width="200">Welcome</div>
 
         
 
-    <p> TechIT members enjoy access to the following features and benefits:</p>
+    <p> GigaSensei members enjoy access to the following features and benefits:</p>
     <p> Access to entire 5,000+ course library</p>
     <p> Learning paths</p>
     <p> Skill measurement</p>

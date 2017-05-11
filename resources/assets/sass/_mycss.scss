@@ -2,8 +2,7 @@
 	* { margin: 0; padding: 0; }
 		
 		body, html {  
-			background-color: 
-      #2d1a19; 
+      background: black;
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
 			-o-background-size: cover;
@@ -127,4 +126,19 @@ height: 500px;
     left: 0;
     width: 100%;
     height: 100%;
+}
+.inverse{
+  background-color: black;
+}
+
+.my-panel-heading{
+  background-color: black;
+  padding: 10px 15px;
+   
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.panel-default{
+  border: transparent;
 }

@@ -1,11 +1,11 @@
-@extends('layouts.app')
+@extends('layouts.nobg')
 
 @section('content')
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default inverse">
-                <div class="panel-heading inverse"><span class="white">Register</span></div>
+                <div class="my-panel-heading" align="center"><img src="images/whiteninja.png" alt="" width="200">Register Here</div>
                 <div class="panel-body">
                     <form class="form-horizontal" role="form" method="POST" action="{{ route('register') }}">
                         {{ csrf_field() }}
