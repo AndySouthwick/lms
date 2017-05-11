@@ -33,19 +33,16 @@
     </script>
 </head>
 <body>
-<div class="wrapper">
-    <div id="app">
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container ">
-                <div class="navbar-header">
 
-                    <!-- Collapsed Hamburger -->
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                        <span class="sr-only">Toggle Navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+         <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
 
                     <!-- Branding Image -->
                        @if (Auth::guest()) <a class="navbar-brand" href="{{ url('/') }}">
@@ -98,15 +95,74 @@
             </div>
         </nav>
 
-        <div class="container mycontainer">
+       
         @yield('content')
-        </div>
+       
    
-        <footer class="footer stickyfooter inverse-margin">
-        <div class="container">
-        <p>This is my footer content.</p>
-        </div> 
-        </footer>
+         <div class="container-fluid textblack">
+      <footer>
+          <div class="row">
+          <div class="col-md-3">
+            <h1>GigaSensei</h1>
+           
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-md-2 col-md-offset-2">
+            <h3>Students</h3>
+            <ul>
+                <li><a href="">Tutor Access</a></li>
+                 <li> <a href="">For Individutal</a></li>
+                 <li> <a href="">For the Software Pro</a></li>
+              </ul>
+            
+        </div>
+               <div class="col-md-2">
+            <h3>Platform</h3>
+            <ul>
+           <li> <a href="">Browse Libraries</a></li>
+               <li>  <a href="">Tracks</a></li>
+                <li> <a href="">Measure Your Skills</a></li>
+                 <li><a href="">Mobile Access</a></li>
+                <li> <a href="">Course Catalog</a></li>
+                <li> <a href="">Viewing</a></li>
+               <li>  <a href="">Mentors</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2">
+           
+            <h3>Support</h3>
+             <ul>
+            <li><a href="">Help Center</a></li>
+           <li>  <a href="">FAQ</a></li>
+              </ul>
+        </div>
+        <div class="col-md-2">
+            <h3>Company</h3>
+            <ul>
+            <li><a href="">Contact</a></li>
+            <li> <a href="">About</a></li>
+             <li> <a href="">Integrations</a></li>
+              <li> <a href="">Blog</a></li>
+               <li> <a href="">Become A Tutor</a></li>
+               </ul>
+        </div>
+       
+</div>
+<div class="row">
+     <div class="col-md-2 col-md-offset-10">
+
+            <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-slack fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
+        </div>
+</div>
+        <div class="row" align="center"> <p>@copy2017 GigasSensei.com</p></div>
+      </footer>
+      </div>
+
+</div>
   </div> 
 
     <!-- Scripts -->    <script src="{{ asset('js/app.js') }}"></script>
