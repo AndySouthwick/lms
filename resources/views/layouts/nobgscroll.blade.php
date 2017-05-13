@@ -98,15 +98,11 @@
             </div>
         </nav>
 
-        <div class="container mycontainer">
+       
         @yield('content')
-        </div>
+        
    
-        <footer class="footer inverse-margin">
-        <div class="container">
-        <p>This is my footer content.</p>
-        </div> 
-        </footer>
+
   </div> 
 
     <!-- Scripts -->    <script src="{{ asset('js/app.js') }}"></script>

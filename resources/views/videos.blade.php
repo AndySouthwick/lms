@@ -5,9 +5,9 @@
 @section('nav')
 @endsection
 @section('content')
-<div class="opacity" align="center">     
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 opacity" align="center">     
 @foreach ($courses as $course) 
-  <h2 class="inverse inverse-padd">{{$course->course_name}}</h2>
+  <h2 class=" inverse inverse-padd">{{$course->course_name}}</h2>
 
     @if($selected_videos != NULL)
   @foreach ($selected_videos as $selected_video)  
@@ -22,16 +22,17 @@
 </div>
 @endforeach
 
+<div class="col-sm-3 col-md-2 sidebar">
 @foreach ($videos as $video)     
     
       
 
-             <div class="col-lg-12 inverse">
+             <div class="inverse">
 <a href="/videos/{{$course->id}}/{{$video->id}}">
 <h4>{{$video->video_title}}</h4>
 </a>
           
-            </div></a>
+            </div> </hr>
             <!-- Button trigger modal -->
 
 <!-- Modal -->
@@ -50,4 +51,5 @@
   </div>
 </div>-->
 @endforeach
+</div>
 @endsection

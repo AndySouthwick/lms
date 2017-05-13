@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Tech Teach')
+@section('title', 'Welcome Genin')
 
 <!--navigation-->
 @section('nav')

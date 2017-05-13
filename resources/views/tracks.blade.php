@@ -3,7 +3,7 @@
 @section('title', 'Tracks')
 
 @section('content')
-
+ <div class="container mycontainer">
     @foreach ($tracks as $track)
     <div class="col-lg-6 " >
         <a href="/courses/{{$track->id}}/{{$track->track_name}}" class="a">
@@ -24,4 +24,5 @@
     </div>
 
     @endforeach
+    </div>
 @endsection
