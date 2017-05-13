@@ -32,7 +32,7 @@
 <h4>{{$video->video_title}}</h4>
 </a>
           
-            </div> </hr>
+            </div> <hr/>
             <!-- Button trigger modal -->
 
 <!-- Modal -->
