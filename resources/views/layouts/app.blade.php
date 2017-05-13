@@ -75,12 +75,12 @@
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
-                                <ul class="dropdown-menu inverse" role="menu">
-                                    <li class="inverse" >
-                                        <a  class="inverse" href="{{ route('logout') }}"
+                                <ul class="dropdown-menu  role="menu">
+                                    <li >
+                                        <a   href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                           <span class="white">Logout</span> 
+                                           <span>Logout</span> 
                                         </a>
 
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
